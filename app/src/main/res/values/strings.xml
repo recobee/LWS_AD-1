@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Vizag</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_act1">act1</string>
+    <string name="title_activity_search_activity">search_activity</string>
+    <string name="title_activity_fav_activity">Fav_activity</string>
+    <string name="title_activity_activity_sell1">activity_sell1</string>
+    <string name="title_activity_sell__house">Sell_House</string>
+    <string name="title_activity_sell__house__details">Sell_House_Details</string>
+    <string name="title_activity_blank">blank</string>
+    <string name="title_activity_post">Post</string>
+    <string name="title_activity_images">Images</string>
+    <string name="title_activity_sell_apt_details">sell_apt_details</string>
+    <string name="title_activity_post__success">Post_Success</string>
+    <string name="title_activity_location">location</string>
+    <string name="loc_address_lines">5</string>
+    <string name="title_activity_p_and__s">Dashboard</string>
+    <string name="title_activity_search">Search</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="product_name">Product Name</string>
+    <string name="txt_image_slider">Image Slideshow</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="time_out">Time Out</string>
+    <string name="error_occured">Error Occurred</string>
+    <string name="loadPic">Click to load pic</string>
+    <string name="camera">Open Camera</string>
+    <string name="gallery">Open Gallery</string>
+    <string name="locate_button">Get Location</string>
+    <string name="type_Address">Type Your Address here</string>
+    <string name="long_hint">Longitude</string>
+    <string name="lat_hint">Latitude</string>
+    <string name="send_button">Save Location</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="map_button">Set Location</string>
+    <string name="normal_map">Normal</string>
+    <string name="hybrid_map">Hybrid</string>
+    <string name="terrain_map">Terrain</string>
+    <string name="satellite_map">Satellite</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_pick">Pick From Gallery</string>
+    <string name="btn_pick_mul">Pick From Gallery (Multiple)</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Favorites</item>
+        <item>History</item>
+        <item>Top Deals</item>
+        <item>Reviews</item>
+        <item>Feedback</item>
+        <item>Rate us</item>
+        <item>Share</item>
+    </string-array>
+    <string-array name="nav_drawer_items1">
+        <item>My Vizag</item>
+        <item>Favorites</item>
+        <item>History</item>
+        <item>Top Deals</item>
+        <item>Reviews</item>
+        <item>Feedback</item>
+        <item>Rate us</item>
+        <item>Share</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_search_lister">search_lister</string>
+    <string name="title_activity_gal_images_upload">Gal_images_upload</string>
+
+<item type="id" name="act_sell_h"></item>
+<item type="id" name="act_sell_a"></item>
+</resources>

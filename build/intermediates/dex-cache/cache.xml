@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/classes-b43b5fd33aaf38c8687e82bf92675cfbfb84e031.jar"
+        jar="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.2.08/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1ed7a7a05185651f9af41ad93711cb96b66f331c"/>
+    <item
+        dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/classes-652e82490616fd4dc355ee64f243e220bbe70fa7.jar"
+        jar="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-128e31a1230965300ca18604aa602486e1f0f20f.jar"
+        jar="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/libs/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
+    <item
+        dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-06b08b9d04e7f1d2e12f2eb4fd502a20b21f669d.jar"
+        jar="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+
+</pre-dex-items>

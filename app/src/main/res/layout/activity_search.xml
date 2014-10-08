@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECECEC"
+    >
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:background="@drawable/background_shadow2"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:background="@drawable/btn1selector"
+            android:id="@+id/button_buy3"
+            android:onClick="selectFrag"
+            android:button="@null"
+            android:text="BUY"
+            android:textColor="@color/snow"
+            android:textSize="@dimen/pad_main_text"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/pad_main_sel"
+            android:paddingTop="@dimen/pad_main_sel2"
+            android:paddingRight="@dimen/pad_main_sel"
+            android:paddingBottom="@dimen/pad_main_sel2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:background="@drawable/btn1selector"
+            android:id="@+id/button_buy4"
+            android:onClick="selectFrag"
+            android:button="@null"
+            android:text="RENT"
+            android:textColor="@color/whiter"
+            android:textSize="@dimen/pad_main_text"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/pad_main_sel"
+            android:paddingTop="@dimen/pad_main_sel2"
+            android:paddingRight="@dimen/pad_main_sel"
+            android:paddingBottom="@dimen/pad_main_sel2" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:name="com.livingwordsolutions.technosoft.post_module_location.buyFragment"
+        android:id="@+id/fragment_place_buy"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+
+</LinearLayout>

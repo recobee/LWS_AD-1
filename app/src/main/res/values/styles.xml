@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <color name="maincolor">#01335D</color>
+    <color name="snow">#FAFAF8</color>
+    <color name="whiter">#ECECEC</color>
+    <color name="light_sky_blue">#025293</color>
+    <color name="moonstone_blue">#75A1B7</color>
+    <color name="dark">#5f8a9f</color>
+    <color name="buttonColor">#0000FF</color>
+    <style name="btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+</resources>
