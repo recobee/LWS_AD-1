@@ -7,7 +7,7 @@ My Vizag Real Estate Application
 		Designed by Kishore Chandra
 		Co-ordinated by Santhosh
 
-	Features:
+		Main Features of this app:
 			1.Post
 			2.Search
 			3.Search Nearby
