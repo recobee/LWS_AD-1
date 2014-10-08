@@ -34,7 +34,7 @@ public class sell_shop extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View firstTabView = inflater.inflate(R.layout.form_sell_appartment, container, false);
+        View firstTabView = inflater.inflate(R.layout.form_sell_shop, container, false);
 
         phone = (EditText) firstTabView.findViewById(R.id.phone_val);
         cons_t = (EditText) firstTabView.findViewById(R.id.cons_by);

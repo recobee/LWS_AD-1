@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/cons_by"
                     android:layout_weight="12"
-                    android:hint="Builder/Owner"
+                    android:hint="Owner"
                     android:maxLength="30"
                     android:singleLine="true"
                     android:textSize="14sp"/>
