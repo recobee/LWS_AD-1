@@ -1,0 +1,12 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+<fragment
+    android:id="@id/act_sell_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="Forms.sell_underconstruction"></fragment>
+
+</RelativeLayout>
