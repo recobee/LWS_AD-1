@@ -23,11 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcaacd71-e788-4414-b5f7-0539a8733ddb" name="Default" comment="Updated FragmentOne.class (Kishore)">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/LoginActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/RegisterActivity.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/form_sell_shop.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/form_sell_shop.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Forms/sell_shop.java" afterPath="$PROJECT_DIR$/app/src/main/java/Forms/sell_shop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LWS_AD-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,8 +92,8 @@
       <file leaf-file-name="form_sell_shop.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_sell_shop.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16025642" vertical-offset="1005" max-vertical-offset="3165">
-              <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.48076922" vertical-offset="1575" max-vertical-offset="3165">
+              <caret line="120" column="43" selection-start-line="120" selection-start-column="43" selection-end-line="120" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -1874,8 +1870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_sell_shop.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16025642" vertical-offset="1005" max-vertical-offset="3165">
-          <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.48076922" vertical-offset="1575" max-vertical-offset="3165">
+          <caret line="120" column="43" selection-start-line="120" selection-start-column="43" selection-end-line="120" selection-end-column="43" />
           <folding />
         </state>
       </provider>
