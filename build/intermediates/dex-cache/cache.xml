@@ -2,6 +2,18 @@
 <pre-dex-items>
 
     <item
+        dex="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-948a4c83f41cc1d61c54ee988ce72ffe67487ddd.jar"
+        jar="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/pre-dexed/debug/classes-35595da6d1557aac8a5f72c75dc35b61690fbf27.jar"
+        jar="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/5.2.08/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1ed7a7a05185651f9af41ad93711cb96b66f331c"/>
+    <item
         dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
         jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
@@ -16,6 +28,18 @@
     <item
         dex="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/pre-dexed/debug/classes-652e82490616fd4dc355ee64f243e220bbe70fa7.jar"
         jar="/Users/kishorechandra/Documents/Android_Project_MyVizag/Post_module_location/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-0684b30796845a8294c26c016cf0741b1e893e47.jar"
+        jar="/Users/kishorechandra/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.3/a85588bec3e2c4584d593d3f15df1677321bca72/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
+    <item
+        dex="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/pre-dexed/debug/classes-862071f3813d2fd78d6f42e826e1e609a731cc87.jar"
+        jar="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
