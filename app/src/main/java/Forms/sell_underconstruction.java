@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.livingwordsolutions.technosoft.post_module_location.R;
-import com.livingwordsolutions.technosoft.post_module_location.Task_async.sell_appartment_task;
+import com.livingwordsolutions.technosoft.post_module_location.Task_async.sell_underconstruction_task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -96,7 +96,7 @@ public class sell_underconstruction extends Fragment {
             @Override
             public void onClick(View view) {
 
-                new sell_appartment_task(getActivity(), phone.getText(), cons_t.getText(),submitter.getSelectedItem()).execute();
+                new sell_underconstruction_task(getActivity(), phone.getText(), cons_t.getText(),submitter.getSelectedItem()).execute();
 
             }
 
