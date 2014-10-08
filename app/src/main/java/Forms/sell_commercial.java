@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.livingwordsolutions.technosoft.post_module_location.R;
-import com.livingwordsolutions.technosoft.post_module_location.Task_async.sell_land_task;
+import com.livingwordsolutions.technosoft.post_module_location.Task_async.sell_commercial_task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class sell_commercial extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View firstTabView = inflater.inflate(R.layout.form_sell_land, container, false);
+        View firstTabView = inflater.inflate(R.layout.form_sell_commercial, container, false);
 
         phone = (EditText) firstTabView.findViewById(R.id.phone_val);
         cons_t = (EditText) firstTabView.findViewById(R.id.cons_by);
@@ -96,7 +96,7 @@ public class sell_commercial extends Fragment {
             @Override
             public void onClick(View view) {
 
-                new sell_land_task(getActivity(), phone.getText(), cons_t.getText(),submitter.getSelectedItem()).execute();
+                new sell_commercial_task(getActivity(), phone.getText(), cons_t.getText(),submitter.getSelectedItem()).execute();
 
             }
 

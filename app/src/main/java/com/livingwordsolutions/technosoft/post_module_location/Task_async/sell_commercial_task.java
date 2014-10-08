@@ -42,7 +42,7 @@ public class sell_commercial_task extends AsyncTask<String, String, String> {
     protected void onPreExecute() {
         super.onPreExecute();
         pDialog = new ProgressDialog(context);
-        pDialog.setTitle("Sell Land Details");
+        pDialog.setTitle("Sell Commercial Details");
         pDialog.setMessage("Submitting...");
         pDialog.setProgressStyle(pDialog.STYLE_HORIZONTAL);
         pDialog.setProgress(0);
