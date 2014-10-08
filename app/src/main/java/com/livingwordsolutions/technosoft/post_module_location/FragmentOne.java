@@ -160,6 +160,42 @@ public class FragmentOne extends Fragment {
         widget = host.getTabWidget();
     }
 
+    private void Underconstruction_Sell_Tabs() {
+
+        host.clearAllTabs();
+
+        firstTab.setContent(new TabHost.TabContentFactory() {
+            @Override
+            public View createTabContent(String s) {
+                View res2 = inflater.inflate(R.layout.activity_sell__underconstruction__details, container, false);
+                //res2.findViewById(R.id.act_sell_a);
+                return res2;
+            }
+        });
+
+
+        secondTab.setContent(new TabHost.TabContentFactory() {
+            @Override
+            public View createTabContent(String s) {
+                return inflater.inflate(R.layout.activity_location, container, false);
+            }
+        });
+
+
+        thirdTab.setContent(new TabHost.TabContentFactory() {
+            @Override
+            public View createTabContent(String s) {
+                return inflater.inflate(R.layout.add_images, container, false);
+            }
+
+        });
+
+        host.addTab(firstTab);
+        host.addTab(secondTab);
+        host.addTab(thirdTab);
+        widget = host.getTabWidget();
+    }
+
 
     private void radioButtonSelectionActivity(int checkedId) {
 
@@ -178,7 +214,7 @@ public class FragmentOne extends Fragment {
 
                 break;
             case R.id.sell_4:
-                //initSell2Tabs();
+                Underconstruction_Sell_Tabs();
 
                 break;
             case R.id.sell_5:
