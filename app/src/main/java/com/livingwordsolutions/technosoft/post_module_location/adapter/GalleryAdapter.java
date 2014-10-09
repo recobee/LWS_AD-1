@@ -45,6 +45,7 @@ public class GalleryAdapter extends BaseAdapter {
         return position;
     }
 
+// can i use this ?
     public void setMultiplePick(boolean isMultiplePick) {
         this.isActionMultiplePick = isMultiplePick;
     }
