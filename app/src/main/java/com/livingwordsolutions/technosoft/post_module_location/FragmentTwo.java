@@ -14,7 +14,6 @@ import android.view.ViewGroup;
  * to handle interaction events.
  * Use the {@link com.livingwordsolutions.technosoft.post_module_location.FragmentTwo#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class FragmentTwo extends Fragment {
     @Override

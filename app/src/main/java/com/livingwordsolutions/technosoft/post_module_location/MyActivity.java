@@ -18,8 +18,6 @@ import android.widget.RadioGroup;
 
 public class MyActivity extends Activity {
 
-    
-
 
     RadioGroup l_lout;
     LinearLayout set_container;
@@ -28,7 +26,6 @@ public class MyActivity extends Activity {
     Intent camera, gallery;
     int[] idDetails = new int[6];
     Bitmap image;
-
 
 
     @Override
@@ -53,20 +50,16 @@ public class MyActivity extends Activity {
     }
 
 
-
-
-
     public void selectFrag(View view) {
         Fragment fr;
 
 
-
-        if(view == findViewById(R.id.button3)) {
+        if (view == findViewById(R.id.button3)) {
 
             fr = new FragmentOne();
 
 
-        }else{
+        } else {
 
             fr = new FragmentTwo();
 
@@ -90,7 +83,6 @@ public class MyActivity extends Activity {
 
         return true;
     }
-
 
 
     @Override

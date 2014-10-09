@@ -25,7 +25,7 @@ import java.util.Locale;
 
 public class MapActivity extends Activity {
 
-   private LatLng LIVING_WORD = new LatLng(17.6883, 83.21826);
+    private LatLng LIVING_WORD = new LatLng(17.6883, 83.21826);
     private GoogleMap googleMap;
     private Marker marker;
     private Geocoder coder;
@@ -47,8 +47,8 @@ public class MapActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent returnIntent = new Intent();
-                returnIntent.putExtra("lat", marker.getPosition().latitude+"");
-                returnIntent.putExtra("lon", marker.getPosition().longitude+"");
+                returnIntent.putExtra("lat", marker.getPosition().latitude + "");
+                returnIntent.putExtra("lon", marker.getPosition().longitude + "");
                 returnIntent.putExtra("address", marker.getTitle());
 
                 setResult(RESULT_OK, returnIntent);
@@ -59,10 +59,10 @@ public class MapActivity extends Activity {
 
 
     private void initComponents() {
-        if(googleMap == null) {
-            googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap() ;
+        if (googleMap == null) {
+            googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 
-            if(googleMap == null) {
+            if (googleMap == null) {
 
                 Toast.makeText(getApplicationContext(), "Google Map is not loading", Toast.LENGTH_SHORT).show();
             } else {
@@ -103,7 +103,7 @@ public class MapActivity extends Activity {
             List<Address> addressList = coder.getFromLocation(latitude, longitude, 1);
             if (addressList != null) {
                 Address address = addressList.get(0);
-                String returnString = address.getSubLocality()+","+address.getLocality() +","+address.getCountryName()+","+address.getPostalCode();
+                String returnString = address.getSubLocality() + "," + address.getLocality() + "," + address.getCountryName() + "," + address.getPostalCode();
 
                 return returnString;
             } else {
@@ -125,11 +125,19 @@ public class MapActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch(id) {
-            case R.id.normal : googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);break;
-            case R.id.satellite : googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);break;
-            case R.id.hybrid : googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);break;
-            case R.id.terrain : googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);break;
+        switch (id) {
+            case R.id.normal:
+                googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                break;
+            case R.id.satellite:
+                googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                break;
+            case R.id.hybrid:
+                googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                break;
+            case R.id.terrain:
+                googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+                break;
         }
 
         return true;

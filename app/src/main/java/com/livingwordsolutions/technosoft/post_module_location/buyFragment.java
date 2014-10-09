@@ -26,15 +26,6 @@ import java.util.List;
  */
 public class buyFragment extends Fragment {
 
-    private RadioButton buy_one;
-    private RadioButton buy_two;
-    private RadioButton buy_three;
-    private RadioButton buy_four;
-    private RadioButton buy_five;
-    private RadioButton buy_six;
-    private RadioGroup radioGroup;
-    private String buttonSelected;
-    private ProgressDialog pDialog;
     public static final String TAG = "rangeseekbar";
     JSONParser jsonParser = new JSONParser();
     FragmentTransaction fragmentTransaction;
@@ -47,7 +38,15 @@ public class buyFragment extends Fragment {
     TabWidget widget;
     Spinner option1;
     Spinner option2;
-
+    private RadioButton buy_one;
+    private RadioButton buy_two;
+    private RadioButton buy_three;
+    private RadioButton buy_four;
+    private RadioButton buy_five;
+    private RadioButton buy_six;
+    private RadioGroup radioGroup;
+    private String buttonSelected;
+    private ProgressDialog pDialog;
 
     private void initRadioButtons() {
         buy_one = (RadioButton) result.findViewById(R.id.buy_1);

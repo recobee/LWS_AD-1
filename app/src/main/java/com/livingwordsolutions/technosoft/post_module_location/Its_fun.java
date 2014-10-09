@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-
-
 public class Its_fun extends Fragment {
 
     @Override
@@ -17,7 +15,6 @@ public class Its_fun extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_its_fun, container, false);
     }
-
 
 
 }

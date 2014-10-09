@@ -24,96 +24,94 @@ import java.net.URLConnection;
 
 public class JSONParser {
 
-	static String json = "";
+    static String json = "";
+    InputStream inputStream = null;
+    BufferedReader reader = null;
+    private HttpURLConnection httpConnection;
 
-	private HttpURLConnection httpConnection;
+    public JSONParser() {
+    }
 
-	InputStream inputStream = null;
-	BufferedReader reader = null;
+    private void openHttpUrlConnection(String urlString) throws IOException {
+        Log.d("urlstring in parser", urlString + "");
+        URL url = new URL(urlString);
+        URLConnection connection = url.openConnection();
 
-	public JSONParser() {
-	}
+        httpConnection = (HttpURLConnection) connection;
+        httpConnection.setConnectTimeout(30000);
+        httpConnection.setRequestMethod("GET");
 
-	private void openHttpUrlConnection(String urlString) throws IOException {
-		Log.d("urlstring in parser", urlString + "");
-		URL url = new URL(urlString);
-		URLConnection connection = url.openConnection();
+        httpConnection.connect();
+    }
 
-		httpConnection = (HttpURLConnection) connection;
-		httpConnection.setConnectTimeout(30000);
-		httpConnection.setRequestMethod("GET");
+    private void openHttpClient(String urlString) throws IOException {
+        DefaultHttpClient httpClient = new DefaultHttpClient();
+        HttpParams httpParams = httpClient.getParams();
+        HttpConnectionParams.setConnectionTimeout(httpParams, 30000);
 
-		httpConnection.connect();
-	}
+        HttpGet httpGet = new HttpGet(urlString);
 
-	private void openHttpClient(String urlString) throws IOException {
-		DefaultHttpClient httpClient = new DefaultHttpClient();
-		HttpParams httpParams = httpClient.getParams();
-		HttpConnectionParams.setConnectionTimeout(httpParams, 30000);
+        HttpResponse httpResponse = httpClient.execute(httpGet);
+        HttpEntity httpEntity = httpResponse.getEntity();
+        inputStream = httpEntity.getContent();
 
-		HttpGet httpGet = new HttpGet(urlString);
+        reader = new BufferedReader(
+                new InputStreamReader(inputStream, "UTF-8"), 8);
+    }
 
-		HttpResponse httpResponse = httpClient.execute(httpGet);
-		HttpEntity httpEntity = httpResponse.getEntity();
-		inputStream = httpEntity.getContent();
+    // using HttpClient for <= Froyo
+    public JSONObject getJSONHttpClient(String url)
+            throws ClientProtocolException, IOException, JSONException {
+        JSONObject jsonObject = null;
+        try {
+            openHttpClient(url);
 
-		reader = new BufferedReader(
-				new InputStreamReader(inputStream, "UTF-8"), 8);
-	}
+            StringBuilder sb = new StringBuilder();
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                sb.append(line + "\n");
+            }
 
-	// using HttpClient for <= Froyo
-	public JSONObject getJSONHttpClient(String url)
-			throws ClientProtocolException, IOException, JSONException {
-		JSONObject jsonObject = null;
-		try {
-			openHttpClient(url);
+            json = sb.toString();
 
-			StringBuilder sb = new StringBuilder();
-			String line = null;
-			while ((line = reader.readLine()) != null) {
-				sb.append(line + "\n");
-			}
+            Log.d("json", json);
+            jsonObject = new JSONObject(json);
 
-			json = sb.toString();
+        } finally {
+            FileUtils.close(inputStream);
+            FileUtils.close(reader);
+        }
+        return jsonObject;
+    }
 
-			Log.d("json", json);
-			jsonObject = new JSONObject(json);
+    // using HttpURLConnection for > Froyo
+    public JSONObject getJSONHttpURLConnection(String urlString)
+            throws IOException, JSONException {
 
-		} finally {
-			FileUtils.close(inputStream);
-			FileUtils.close(reader);
-		}
-		return jsonObject;
-	}
+        BufferedReader reader = null;
+        StringBuffer output = new StringBuffer("");
+        InputStream stream = null;
+        JSONObject jsonObject = null;
+        try {
 
-	// using HttpURLConnection for > Froyo
-	public JSONObject getJSONHttpURLConnection(String urlString)
-			throws IOException, JSONException {
+            openHttpUrlConnection(urlString);
 
-		BufferedReader reader = null;
-		StringBuffer output = new StringBuffer("");
-		InputStream stream = null;
-		JSONObject jsonObject = null;
-		try {
+            if (httpConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                stream = httpConnection.getInputStream();
 
-			openHttpUrlConnection(urlString);
+                reader = new BufferedReader(new InputStreamReader(stream,
+                        "UTF-8"), 8);
+                String line = "";
+                while ((line = reader.readLine()) != null)
+                    output.append(line + "\n");
+                json = output.toString();
+                jsonObject = new JSONObject(json);
+            }
 
-			if (httpConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-				stream = httpConnection.getInputStream();
-
-				reader = new BufferedReader(new InputStreamReader(stream,
-						"UTF-8"), 8);
-				String line = "";
-				while ((line = reader.readLine()) != null)
-					output.append(line + "\n");
-				json = output.toString();
-				jsonObject = new JSONObject(json);
-			}
-
-		} finally {
-			FileUtils.close(stream);
-			FileUtils.close(reader);
-		}
-		return jsonObject;
-	}
+        } finally {
+            FileUtils.close(stream);
+            FileUtils.close(reader);
+        }
+        return jsonObject;
+    }
 }

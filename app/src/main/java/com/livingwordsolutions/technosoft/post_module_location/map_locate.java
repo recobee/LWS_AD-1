@@ -10,10 +10,4 @@ import android.app.Fragment;
 public class map_locate extends Fragment {
 
 
-
-
-
-
-
-
 }

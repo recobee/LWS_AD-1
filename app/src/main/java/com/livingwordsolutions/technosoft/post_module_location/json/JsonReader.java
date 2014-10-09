@@ -12,21 +12,21 @@ import java.util.List;
 
 public class JsonReader {
 
-	public static List<Product> getHome(JSONObject jsonObject)
-			throws JSONException {
-		List<Product> products = new ArrayList<Product>();
+    public static List<Product> getHome(JSONObject jsonObject)
+            throws JSONException {
+        List<Product> products = new ArrayList<Product>();
 
-		JSONArray jsonArray = jsonObject.getJSONArray(TagName.TAG_PRODUCTS);
-		Product product;
-		for (int i = 0; i < jsonArray.length(); i++) {
-			product = new Product();
-			JSONObject productObj = jsonArray.getJSONObject(i);
-			product.setId(productObj.getInt(TagName.KEY_ID));
-			product.setName(productObj.getString(TagName.KEY_NAME));
-			product.setImageUrl(productObj.getString(TagName.KEY_IMAGE_URL));
+        JSONArray jsonArray = jsonObject.getJSONArray(TagName.TAG_PRODUCTS);
+        Product product;
+        for (int i = 0; i < jsonArray.length(); i++) {
+            product = new Product();
+            JSONObject productObj = jsonArray.getJSONObject(i);
+            product.setId(productObj.getInt(TagName.KEY_ID));
+            product.setName(productObj.getString(TagName.KEY_NAME));
+            product.setImageUrl(productObj.getString(TagName.KEY_IMAGE_URL));
 
-			products.add(product);
-		}
-		return products;
-	}
+            products.add(product);
+        }
+        return products;
+    }
 }

@@ -74,23 +74,6 @@ public class ScalingUtility {
     }
 
     /**
-     * ScalingLogic defines how scaling should be carried out if source and
-     * destination image has different aspect ratio.
-     * <p/>
-     * CROP: Scales the image the minimum amount while making sure that at least
-     * one of the two dimensions fit inside the requested destination area.
-     * Parts of the source image will be cropped to realize this.
-     * <p/>
-     * FIT: Scales the image the minimum amount while making sure both
-     * dimensions fit inside the requested destination area. The resulting
-     * destination dimensions might be adjusted to a smaller size than
-     * requested.
-     */
-    public static enum ScalingLogic {
-        CROP, FIT
-    }
-
-    /**
      * Calculate optimal down-sampling factor given the dimensions of a source
      * image, the dimensions of a destination area and a scaling logic.
      *
@@ -178,5 +161,22 @@ public class ScalingUtility {
         } else {
             return new Rect(0, 0, dstWidth, dstHeight);
         }
+    }
+
+    /**
+     * ScalingLogic defines how scaling should be carried out if source and
+     * destination image has different aspect ratio.
+     * <p/>
+     * CROP: Scales the image the minimum amount while making sure that at least
+     * one of the two dimensions fit inside the requested destination area.
+     * Parts of the source image will be cropped to realize this.
+     * <p/>
+     * FIT: Scales the image the minimum amount while making sure both
+     * dimensions fit inside the requested destination area. The resulting
+     * destination dimensions might be adjusted to a smaller size than
+     * requested.
+     */
+    public static enum ScalingLogic {
+        CROP, FIT
     }
 }
