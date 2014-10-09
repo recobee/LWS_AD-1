@@ -141,7 +141,8 @@ public class FragmentOne extends Fragment {
         secondTab.setContent(new TabHost.TabContentFactory() {
             @Override
             public View createTabContent(String s) {
-                return inflater.inflate(R.layout.activity_location, container, false);
+                View loc = inflater.inflate(R.layout.activity_location, container, false);
+                return loc;
             }
         });
 
