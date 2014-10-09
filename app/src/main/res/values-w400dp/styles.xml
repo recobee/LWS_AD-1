@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+
     <color name="maincolor">#01335D</color>
     <color name="snow">#FAFAF8</color>
     <color name="whiter">#ECECEC</color>

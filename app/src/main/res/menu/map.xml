@@ -1,22 +1,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.livingwordsolutions.technosoft.post_module_location" >
-    <item android:id="@+id/normal"
-        android:title="@string/normal_map"
+    tools:context="com.livingwordsolutions.technosoft.post_module_location">
+    <item
+        android:id="@+id/normal"
         android:orderInCategory="100"
-        />
-    <item android:id="@+id/satellite"
-        android:title="@string/satellite_map"
+        android:title="@string/normal_map" />
+    <item
+        android:id="@+id/satellite"
         android:orderInCategory="101"
-      />
-    <item android:id="@+id/hybrid"
-        android:title="@string/hybrid_map"
+        android:title="@string/satellite_map" />
+    <item
+        android:id="@+id/hybrid"
         android:orderInCategory="102"
-      />
-    <item android:id="@+id/terrain"
-        android:title="@string/terrain_map"
+        android:title="@string/hybrid_map" />
+    <item
+        android:id="@+id/terrain"
         android:orderInCategory="104"
-       />
+        android:title="@string/terrain_map" />
 
 </menu>

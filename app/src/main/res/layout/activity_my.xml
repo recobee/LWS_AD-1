@@ -1,66 +1,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-       android:id="@+id/main_post"
+    android:id="@+id/main_post"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#ECECEC"
->
+    android:orientation="vertical">
 
 
     <RadioGroup
         android:id="@+id/rg_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:padding="10dip"
         android:background="@drawable/background_shadow2"
-        >
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dip">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dip"
-            android:background="@drawable/btn1selector"
             android:id="@+id/button3"
-            android:onClick="selectFrag"
-            android:button="@null"
-            android:text="SELL"
-            android:textColor="@color/snow"
-            android:textSize="@dimen/pad_main_text"
-            android:textAlignment="center"
-            android:paddingLeft="@dimen/pad_main_sel"
-            android:paddingTop="@dimen/pad_main_sel2"
-            android:paddingRight="@dimen/pad_main_sel"
-            android:paddingBottom="@dimen/pad_main_sel2"
-            android:checked="true"
-            />
-
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dip"
             android:background="@drawable/btn1selector"
-            android:id="@+id/button4"
-            android:onClick="selectFrag"
             android:button="@null"
-            android:text="RENT"
-            android:textColor="@color/whiter"
-            android:textSize="@dimen/pad_main_text"
-            android:textAlignment="center"
+            android:checked="true"
+            android:onClick="selectFrag"
+            android:paddingBottom="@dimen/pad_main_sel2"
             android:paddingLeft="@dimen/pad_main_sel"
-            android:paddingTop="@dimen/pad_main_sel2"
             android:paddingRight="@dimen/pad_main_sel"
-            android:paddingBottom="@dimen/pad_main_sel2" />
+            android:paddingTop="@dimen/pad_main_sel2"
+            android:text="SELL"
+            android:textAlignment="center"
+            android:textColor="@color/snow"
+            android:textSize="@dimen/pad_main_text" />
+
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:background="@drawable/btn1selector"
+            android:button="@null"
+            android:onClick="selectFrag"
+            android:paddingBottom="@dimen/pad_main_sel2"
+            android:paddingLeft="@dimen/pad_main_sel"
+            android:paddingRight="@dimen/pad_main_sel"
+            android:paddingTop="@dimen/pad_main_sel2"
+            android:text="RENT"
+            android:textAlignment="center"
+            android:textColor="@color/whiter"
+            android:textSize="@dimen/pad_main_text" />
 
     </RadioGroup>
-    
-        <LinearLayout
-            android:name="com.livingwordsolutions.technosoft.post_module_location.FragmentOne"
-            android:id="@+id/fragment_place"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-        />
+
+    <LinearLayout
+        android:id="@+id/fragment_place"
+        android:name="com.livingwordsolutions.technosoft.post_module_location.FragmentOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
 
 </LinearLayout>

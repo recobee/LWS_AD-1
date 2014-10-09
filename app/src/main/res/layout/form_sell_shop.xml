@@ -1,165 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <ScrollView
         android:id="@+id/scr"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:scrollbars="none"
-        >
+        android:scrollbars="none">
+
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:clickable="true">
+
             <LinearLayout
                 android:id="@+id/sub_frame"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ab_transparent_myvizag"
                 android:padding="5dip"
-                android:weightSum="20"
-                >
+                android:weightSum="20">
+
                 <ImageView
                     android:layout_width="0dip"
                     android:layout_height="30dip"
                     android:layout_weight="2"
-                    android:src="@drawable/submitter_ic"/>
+                    android:src="@drawable/submitter_ic" />
+
                 <Spinner
-                    android:layout_weight="18"
+                    android:id="@+id/submitter"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:id="@+id/submitter"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    />
+                    android:layout_weight="18" />
             </LinearLayout>
+
             <LinearLayout
-                android:paddingTop="10dip"
-                android:layout_below="@id/sub_frame"
                 android:id="@+id/sec_level"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/sub_frame"
+                android:paddingTop="10dip"
                 android:weightSum="30">
+
                 <ImageView
                     android:layout_width="0dip"
                     android:layout_height="30dip"
                     android:layout_weight="3"
-                    android:src="@drawable/phone_ic"/>
+                    android:src="@drawable/phone_ic" />
 
                 <EditText
 
+                    android:id="@+id/phone_val"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:id="@+id/phone_val"
                     android:layout_weight="12"
                     android:hint="Contact number"
-                    android:maxLength="30"
                     android:inputType="phone"
-                    android:textSize="14sp"/>
+                    android:maxLength="30"
+                    android:textSize="14sp" />
+
                 <ImageView
                     android:layout_width="0dip"
                     android:layout_height="30dip"
                     android:layout_weight="3"
-                    android:src="@drawable/const_ic"/>
+                    android:src="@drawable/const_ic" />
+
                 <EditText
 
+                    android:id="@+id/cons_by"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:id="@+id/cons_by"
                     android:layout_weight="12"
                     android:hint="Owner"
                     android:maxLength="30"
                     android:singleLine="true"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_below="@+id/sec_level"
                 android:id="@+id/address_block"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/sec_level"
                 android:orientation="horizontal">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
 
+                <EditText
                     android:id="@+id/address"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
                     android:hint="Address of submitter"
                     android:inputType="textMultiLine"
                     android:lines="4"
-                    android:gravity="top"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/req_block"
-                android:layout_below="@id/address_block"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/address_block"
                 android:weightSum="2">
+
                 <Spinner
+                    android:id="@+id/rooms"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rooms"
-                    android:layout_weight="1"
-                    android:hint="Rooms"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:padding="0dip"
-                    />
+                    android:layout_weight="1"
+                    android:hint="Rooms"
+                    android:padding="0dip" />
+
                 <Spinner
+                    android:id="@+id/furniture"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/furniture"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/req_block1"
-                android:layout_below="@id/req_block"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/req_block"
                 android:weightSum="2">
+
                 <Spinner
-                    android:layout_width="0dip"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:id="@+id/sqft"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"/>
-                <Spinner
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="1" />
+
+                <Spinner
                     android:id="@+id/facing"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/pr"
-                android:layout_below="@id/req_block1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/req_block1"
                 android:weightSum="2">
+
                 <TextView
                     android:layout_width="100dip"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:paddingLeft="10dip"
                     android:text="Rs"
-                    android:textSize="20sp"
-                    android:layout_weight="1"/>
+                    android:textSize="20sp" />
+
                 <EditText
-                    android:layout_weight="1"
+                    android:id="@+id/price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/price"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_weight="1"
                     android:hint="Price"
                     android:inputType="number" />
 
@@ -167,16 +180,16 @@
             </LinearLayout>
 
             <Button
-                android:layout_below="@id/pr"
-                android:layout_alignParentBottom="true"
+                android:id="@+id/btn"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn"
-                android:background="@color/maincolor"
-                android:textColor="@android:color/white"
-                android:text="Submit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_below="@id/pr"
+                android:background="@color/maincolor"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 

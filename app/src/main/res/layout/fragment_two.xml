@@ -1,87 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
     android:background="@color/snow"
-    >
+    android:orientation="vertical">
+
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:id="@+id/horizontalScrollView"
-        >
+        android:layout_alignParentTop="true">
 
         <RadioGroup
             android:id="@+id/rb_group"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
             <RadioButton
-                android:layout_width="@dimen/iconsize_myvizag"
-                android:layout_height="@dimen/iconsize_myvizag"
-                android:background="@drawable/btn_house"
-                android:layout_margin="5dip"
                 android:id="@+id/rent_1"
-                android:button="@null"
-                />
-
-            <RadioButton
                 android:layout_width="@dimen/iconsize_myvizag"
                 android:layout_height="@dimen/iconsize_myvizag"
                 android:layout_margin="5dip"
+                android:background="@drawable/btn_house"
+                android:button="@null" />
+
+            <RadioButton
                 android:id="@+id/rent_2"
-                android:button="@null"
+                android:layout_width="@dimen/iconsize_myvizag"
+                android:layout_height="@dimen/iconsize_myvizag"
+                android:layout_margin="5dip"
                 android:background="@drawable/btn_appart"
-                />
+                android:button="@null" />
 
             <RadioButton
-                android:layout_width="@dimen/iconsize_myvizag"
-                android:layout_height="@dimen/iconsize_myvizag"
-                android:background="@drawable/btn_shop"
-                android:layout_margin="5dip"
                 android:id="@+id/rent_3"
-                android:button="@null"
-                />
-
-            <RadioButton
                 android:layout_width="@dimen/iconsize_myvizag"
                 android:layout_height="@dimen/iconsize_myvizag"
                 android:layout_margin="5dip"
+                android:background="@drawable/btn_shop"
+                android:button="@null" />
+
+            <RadioButton
                 android:id="@+id/rent_4"
-                android:button="@null"
+                android:layout_width="@dimen/iconsize_myvizag"
+                android:layout_height="@dimen/iconsize_myvizag"
+                android:layout_margin="5dip"
                 android:background="@drawable/btn_construction"
+                android:button="@null"
 
                 />
+
             <RadioButton
-                android:layout_width="@dimen/iconsize_myvizag"
-                android:layout_height="@dimen/iconsize_myvizag"
-                android:background="@drawable/btn_land"
-                android:layout_margin="5dip"
                 android:id="@+id/rent_5"
+                android:layout_width="@dimen/iconsize_myvizag"
+                android:layout_height="@dimen/iconsize_myvizag"
+                android:layout_margin="5dip"
+                android:background="@drawable/btn_land"
                 android:button="@null"
 
                 />
 
             <RadioButton
-                android:layout_width="@dimen/iconsize_myvizag"
-                android:layout_height="@dimen/iconsize_myvizag"
-                android:layout_margin="5dip"
                 android:id="@+id/rent_6"
-                android:button="@null"
-                android:background="@drawable/btn_commercial"
-
-                />
-            <RadioButton
                 android:layout_width="@dimen/iconsize_myvizag"
                 android:layout_height="@dimen/iconsize_myvizag"
                 android:layout_margin="5dip"
-                android:id="@+id/rent_7"
-                android:button="@null"
                 android:background="@drawable/btn_commercial"
+                android:button="@null"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rent_7"
+                android:layout_width="@dimen/iconsize_myvizag"
+                android:layout_height="@dimen/iconsize_myvizag"
+                android:layout_margin="5dip"
+                android:background="@drawable/btn_commercial"
+                android:button="@null"
 
                 />
 
@@ -89,9 +87,9 @@
     </HorizontalScrollView>
 
     <TabHost
+        android:id="@+id/tab_set"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/tab_set"
         android:layout_below="@+id/horizontalScrollView"
         android:layout_centerHorizontal="true">
 
@@ -113,20 +111,20 @@
                 <LinearLayout
                     android:id="@+id/tab1"
                     android:layout_width="fill_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="fill_parent"></LinearLayout>
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"></LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="fill_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="fill_parent"></LinearLayout>
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"></LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/tab3"
                     android:layout_width="fill_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="fill_parent"></LinearLayout>
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"></LinearLayout>
             </FrameLayout>
         </LinearLayout>
     </TabHost>

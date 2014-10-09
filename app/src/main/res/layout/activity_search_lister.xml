@@ -22,16 +22,16 @@
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dip"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/text_vals"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:paddingBottom="2dip">
+                    android:paddingBottom="2dip"
+                    android:weightSum="2">
 
                     <TextView
                         android:id="@+id/minValue"
@@ -55,8 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/text_vals"
-                    android:orientation="horizontal"
-                    />
+                    android:orientation="horizontal" />
 
             </RelativeLayout>
 
@@ -88,10 +87,11 @@
             android:layout_width="fill_parent"
             android:layout_height="0dip"
             android:layout_weight="1">
+
             <Button
-                android:layout_alignParentBottom="true"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:drawableLeft="@android:drawable/ic_menu_search"
                 android:gravity="center"
                 android:text="Search for the results" />

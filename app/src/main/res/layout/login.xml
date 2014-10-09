@@ -2,14 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#3b3b3b" >
+    android:background="#3b3b3b">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:padding="10dip" >
-		<!--  View Title Label -->
+        android:padding="10dip">
+        <!--  View Title Label -->
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -17,39 +17,40 @@
             android:text="LOGIN"
             android:textSize="25dip"
             android:textStyle="bold" />
-		<!--  Email Label -->
+        <!--  Email Label -->
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Email" />
-		<!--  Email TextField -->
+        <!--  Email TextField -->
         <EditText
             android:id="@+id/loginEmail"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
-        
-		<!--  Password Label -->
+
+        <!--  Password Label -->
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dip"
             android:text="Password" />
-		<!--  Password TextField -->
+        <!--  Password TextField -->
         <EditText
             android:id="@+id/loginPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:password="true" />
-        
-        <!--  Error message -->
-        <TextView android:id="@+id/login_error"
-            		android:layout_width="fill_parent"
-            		android:layout_height="wrap_content"
-            		android:textColor="#e30000"
-            		android:padding="10dip"
-            		android:textStyle="bold"/>
 
-		<!--  Login Button -->        
+        <!--  Error message -->
+        <TextView
+            android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+        <!--  Login Button -->
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="fill_parent"

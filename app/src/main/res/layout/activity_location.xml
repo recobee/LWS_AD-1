@@ -1,81 +1,80 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<RelativeLayout
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/maincolor"
-        android:drawableLeft="@drawable/ic_action_locate"
-        android:padding="1dip"
-        android:textSize="14sp"
-        android:text="@string/locate_button"
-        android:textColor="@android:color/white"
-        android:layout_alignParentTop="true"
-        android:id="@+id/locationButton"/>
+        <Button
+            android:id="@+id/locationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/maincolor"
+            android:drawableLeft="@drawable/ic_action_locate"
+            android:padding="1dip"
+            android:text="@string/locate_button"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
 
-    <EditText
-        android:layout_marginTop="10dip"
-        android:padding="5dip"
-        android:minLines="4"
-        android:scrollbars="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:id="@+id/address"
-        android:inputType="textMultiLine"
-        android:hint="@string/type_Address"
-        android:layout_below="@id/locationButton"
-        android:layout_margin="5dip"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/lat_hint"
-        android:padding="5dip"
-        android:id="@+id/latText"
-        android:layout_below="@id/address"
-        android:layout_marginLeft="20dip"
-        android:layout_marginTop="3dip"
-        android:textSize="14sp"
-        android:textColor="@android:color/black"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/long_hint"
-        android:padding="5dip"
-        android:id="@+id/longText"
-        android:layout_marginLeft="20dip"
-        android:layout_marginTop="3dip"
-        android:textSize="14sp"
-        android:layout_below="@id/latText"
-        android:textColor="@android:color/black"
-        />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationButton"
+            android:layout_margin="5dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:hint="@string/type_Address"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:padding="5dip"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
 
+        <TextView
+            android:id="@+id/latText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="3dip"
+            android:hint="@string/lat_hint"
+            android:padding="5dip"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/locatoinSubmit"
-        android:background="@color/maincolor"
-        android:layout_below="@id/longText"
-        android:layout_marginTop="10dip"
-        android:text="@string/send_button"
-        android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/longText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latText"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="3dip"
+            android:hint="@string/long_hint"
+            android:padding="5dip"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+
+            />
 
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/locatoinSubmit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/longText"
+            android:layout_marginTop="10dip"
+            android:background="@color/maincolor"
+            android:text="@string/send_button"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
 </ScrollView>

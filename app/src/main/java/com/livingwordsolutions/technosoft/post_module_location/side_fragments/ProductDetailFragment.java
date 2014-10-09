@@ -14,9 +14,9 @@ import com.livingwordsolutions.technosoft.post_module_location.R;
 import com.livingwordsolutions.technosoft.post_module_location.bean.Product;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -24,83 +24,80 @@ import java.util.List;
 
 public class ProductDetailFragment extends Fragment {
 
-	TextView pdtIdTxt;
-	TextView pdtNameTxt;
-	ImageView pdtImg;
-	Activity activity;
+    public static final String ARG_ITEM_ID = "pdt_detail_fragment";
+    TextView pdtIdTxt;
+    TextView pdtNameTxt;
+    ImageView pdtImg;
+    Activity activity;
+    ImageLoader imageLoader = ImageLoader.getInstance();
+    DisplayImageOptions options;
+    Product product;
+    private ImageLoadingListener imageListener;
 
-	ImageLoader imageLoader = ImageLoader.getInstance();
-	DisplayImageOptions options;
-	private ImageLoadingListener imageListener;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        activity = getActivity();
+        options = new DisplayImageOptions.Builder()
+                .showImageOnFail(R.drawable.ic_launcher)
+                .showStubImage(R.drawable.ic_launcher)
+                .showImageForEmptyUri(R.drawable.ic_launcher).cacheInMemory()
+                .cacheOnDisc().build();
 
-	Product product;
+        imageListener = new ImageDisplayListener();
 
-	public static final String ARG_ITEM_ID = "pdt_detail_fragment";
+    }
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		activity = getActivity();
-		options = new DisplayImageOptions.Builder()
-				.showImageOnFail(R.drawable.ic_launcher)
-				.showStubImage(R.drawable.ic_launcher)
-				.showImageForEmptyUri(R.drawable.ic_launcher).cacheInMemory()
-				.cacheOnDisc().build();
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_pdt_detail, container,
+                false);
+        findViewById(view);
 
-		imageListener = new ImageDisplayListener();
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            product = bundle.getParcelable("singleProduct");
+            setProductItem(product);
+        }
 
-	}
+        return view;
+    }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_pdt_detail, container,
-				false);
-		findViewById(view);
+    private void findViewById(View view) {
 
-		Bundle bundle = this.getArguments();
-		if (bundle != null) {
-			product = bundle.getParcelable("singleProduct");
-			setProductItem(product);
-		}
+        pdtNameTxt = (TextView) view.findViewById(R.id.pdt_name);
+        pdtIdTxt = (TextView) view.findViewById(R.id.product_id_text);
 
-		return view;
-	}
+        pdtImg = (ImageView) view.findViewById(R.id.product_detail_img);
+    }
 
-	private void findViewById(View view) {
+    private void setProductItem(Product resultProduct) {
+        pdtNameTxt.setText("" + resultProduct.getName());
+        pdtIdTxt.setText("Product Id: " + resultProduct.getId());
 
-		pdtNameTxt = (TextView) view.findViewById(R.id.pdt_name);
-		pdtIdTxt = (TextView) view.findViewById(R.id.product_id_text);
+        imageLoader.displayImage(resultProduct.getImageUrl(), pdtImg, options,
+                imageListener);
+    }
 
-		pdtImg = (ImageView) view.findViewById(R.id.product_detail_img);
-	}
+    private static class ImageDisplayListener extends
+            SimpleImageLoadingListener {
 
-	private static class ImageDisplayListener extends
-			SimpleImageLoadingListener {
+        static final List<String> displayedImages = Collections
+                .synchronizedList(new LinkedList<String>());
 
-		static final List<String> displayedImages = Collections
-				.synchronizedList(new LinkedList<String>());
+        @Override
+        public void onLoadingComplete(String imageUri, View view,
+                                      Bitmap loadedImage) {
+            if (loadedImage != null) {
+                ImageView imageView = (ImageView) view;
+                boolean firstDisplay = !displayedImages.contains(imageUri);
+                if (firstDisplay) {
+                    FadeInBitmapDisplayer.animate(imageView, 500);
+                    displayedImages.add(imageUri);
 
-		@Override
-		public void onLoadingComplete(String imageUri, View view,
-				Bitmap loadedImage) {
-			if (loadedImage != null) {
-				ImageView imageView = (ImageView) view;
-				boolean firstDisplay = !displayedImages.contains(imageUri);
-				if (firstDisplay) {
-					FadeInBitmapDisplayer.animate(imageView, 500);
-					displayedImages.add(imageUri);
-
-				}
-			}
-		}
-	}
-
-	private void setProductItem(Product resultProduct) {
-		pdtNameTxt.setText("" + resultProduct.getName());
-		pdtIdTxt.setText("Product Id: " + resultProduct.getId());
-
-		imageLoader.displayImage(resultProduct.getImageUrl(), pdtImg, options,
-				imageListener);
-	}
+                }
+            }
+        }
+    }
 }

@@ -83,6 +83,6 @@
     <string name="title_activity_search_lister">search_lister</string>
     <string name="title_activity_gal_images_upload">Gal_images_upload</string>
 
-<item type="id" name="act_sell_h"></item>
-<item type="id" name="act_sell_a"></item>
+    <item name="act_sell_h" type="id"></item>
+    <item name="act_sell_a" type="id"></item>
 </resources>

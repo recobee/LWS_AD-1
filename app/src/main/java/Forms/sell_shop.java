@@ -31,6 +31,7 @@ public class sell_shop extends Fragment {
     Spinner facing;
     EditText price;
     Button btn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -98,7 +99,7 @@ public class sell_shop extends Fragment {
             @Override
             public void onClick(View view) {
 
-                new sell_shop_task(getActivity(), phone.getText(), cons_t.getText(),submitter.getSelectedItem()).execute();
+                new sell_shop_task(getActivity(), phone.getText(), cons_t.getText(), submitter.getSelectedItem()).execute();
 
             }
 
@@ -108,8 +109,6 @@ public class sell_shop extends Fragment {
     }
 
 
-
-
-    }
+}
 
 

@@ -38,24 +38,19 @@ public class HomeFragment extends Fragment {
 
     private static final long ANIM_VIEWPAGER_DELAY = 2500;
     private static final long ANIM_VIEWPAGER_DELAY_USER_VIEW = 100000;
-
-    // UI References
-    private ViewPager mViewPager;
     TextView imgNameTxt;
     PageIndicator mIndicator;
-
     AlertDialog alertDialog;
-
     List<Product> products;
     RequestImgTask task;
     boolean stopSliding = false;
     String message;
-
-    private Runnable animateViewPager;
-    private Handler handler;
-
     String url = "http://myvizag.url.ph/products.json";
     FragmentActivity activity;
+    // UI References
+    private ViewPager mViewPager;
+    private Runnable animateViewPager;
+    private Handler handler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,9 +58,9 @@ public class HomeFragment extends Fragment {
         activity = getActivity();
     }
 
-	@Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         final ImageLoader imageLoader = ImageLoader.getInstance();
         imageLoader.init(ImageLoaderConfiguration.createDefault(activity));
 
@@ -146,8 +141,8 @@ public class HomeFragment extends Fragment {
                     HomeFragment.this));
 
             mIndicator.setViewPager(mViewPager);
-			/*imgNameTxt.setText(""
-					+ ((Product) products.get(mViewPager.getCurrentItem()))
+            /*imgNameTxt.setText(""
+                    + ((Product) products.get(mViewPager.getCurrentItem()))
 							.getName());*/
             runnable(products.size());
             //Re-run callback
@@ -195,13 +190,18 @@ public class HomeFragment extends Fragment {
         alertDialog.show();
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
     private class PageChangeListener implements ViewPager.OnPageChangeListener {
 
         @Override
         public void onPageScrollStateChanged(int state) {
             if (state == ViewPager.SCROLL_STATE_IDLE) {
                 if (products != null) {
-					/*imgNameTxt.setText(""
+                    /*imgNameTxt.setText(""
 							+ ((Product) products.get(mViewPager
 									.getCurrentItem())).getName());*/
                 }
@@ -215,11 +215,6 @@ public class HomeFragment extends Fragment {
         @Override
         public void onPageSelected(int arg0) {
         }
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
     }
 
     private class RequestImgTask extends AsyncTask<String, Void, List<Product>> {

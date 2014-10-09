@@ -2,33 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lws.samples.myfirstapplication.MapActivity"
     android:background="@android:color/white"
-    >
-
-
+    tools:context="com.lws.samples.myfirstapplication.MapActivity">
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout"
-        android:orientation="horizontal"
-
         android:layout_alignParentTop="true"
-        >
+
+        android:orientation="horizontal">
 
 
         <ImageButton
+            android:id="@+id/map_send"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_send"
-            android:id="@+id/map_send"
             android:background="@color/buttonColor"
             android:contentDescription="@string/map_button"
-            />
+            android:src="@drawable/ic_action_send" />
     </LinearLayout>
-
 
 
     <fragment
@@ -36,8 +30,7 @@
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
-        />
+        android:layout_below="@+id/linearLayout" />
 
 </RelativeLayout>
 

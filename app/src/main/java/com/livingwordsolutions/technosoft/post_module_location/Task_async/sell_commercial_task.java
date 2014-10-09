@@ -23,15 +23,15 @@ import java.util.List;
 
 public class sell_commercial_task extends AsyncTask<String, String, String> {
 
+    private static final String TAG_SUCCESS = "success";
+    private static String url_create_product = "http://myvizag.url.ph/phone_add.php";
+    private final Context context;
+    private final Object[] objects;
     /**
      * Before starting background thread Show Progress Dialog
      */
     ProgressDialog pDialog;
-    private final Context context;
-    private final Object[] objects;
-    private static String url_create_product = "http://myvizag.url.ph/phone_add.php";
     JSONParser jsonParser = new JSONParser();
-    private static final String TAG_SUCCESS = "success";
 
     public sell_commercial_task(Context context, Object... objects) {
         this.objects = objects;
@@ -60,7 +60,7 @@ public class sell_commercial_task extends AsyncTask<String, String, String> {
         String cons_td = objects[1].toString();
         String sub_mtr = objects[2].toString();
 
-      //  String sub_mtr = insidesub1mitter.getSelectedItem().toString();
+        //  String sub_mtr = insidesub1mitter.getSelectedItem().toString();
             /*String cons_td = cons_t.getText().toString();
             String addre = addr.getText().toString();
             String bedrms = bedrooms.getSelectedItem().toString();
@@ -74,7 +74,7 @@ public class sell_commercial_task extends AsyncTask<String, String, String> {
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("phone", ph));
 
-            params.add(new BasicNameValuePair("con", cons_td));
+        params.add(new BasicNameValuePair("con", cons_td));
         params.add(new BasicNameValuePair("sub", sub_mtr));
             /*params.add(new BasicNameValuePair("ad", addre));
             params.add(new BasicNameValuePair("bed", bedrms));
@@ -102,7 +102,7 @@ public class sell_commercial_task extends AsyncTask<String, String, String> {
             if (success == 1) {
                 // successfully created product
                 Intent i = new Intent(context, Post_Success.class);
-               Log.i("Submitted", "Successfully !");
+                Log.i("Submitted", "Successfully !");
                 context.startActivity(i);
                 // closing this screen
                 //getActivity().finish();
