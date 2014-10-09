@@ -9,6 +9,7 @@
     tools:context="com.livingwordsolutions.technosoft.post_module_location.Post_Success">
 
     <TextView
+    android:id="@+id/txt_success"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
