@@ -30,6 +30,9 @@ public class FragmentOne extends Fragment {
     private RadioButton sell_six;
     private RadioGroup radioGroup;
 
+
+
+
     private void initRadioButtons() {
         sell_one = (RadioButton) result.findViewById(R.id.sell_1);
         sell_two = (RadioButton) result.findViewById(R.id.sell_2);
@@ -68,8 +71,13 @@ public class FragmentOne extends Fragment {
         secondTab.setContent(new TabHost.TabContentFactory() {
             @Override
             public View createTabContent(String s) {
-                return inflater.inflate(R.layout.activity_location, container, false);
-            }
+                View loc = inflater.inflate(R.layout.activity_location, container, false);
+
+
+
+
+                return loc;
+     }
         });
 
 
@@ -86,6 +94,10 @@ public class FragmentOne extends Fragment {
         host.addTab(thirdTab);
         widget = host.getTabWidget();
     }
+
+
+
+
 
     private void Appartment_Sell_Tabs() {
 
@@ -124,6 +136,8 @@ public class FragmentOne extends Fragment {
     }
 
 
+
+
     private void Shop_Sell_Tabs() {
 
         host.clearAllTabs();
@@ -141,8 +155,11 @@ public class FragmentOne extends Fragment {
         secondTab.setContent(new TabHost.TabContentFactory() {
             @Override
             public View createTabContent(String s) {
-                View loc = inflater.inflate(R.layout.activity_location, container, false);
-                return loc;
+                View loc2 = inflater.inflate(R.layout.activity_location, container, false);
+
+
+
+                return loc2;
             }
         });
 
