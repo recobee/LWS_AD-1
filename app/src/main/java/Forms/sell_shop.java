@@ -25,7 +25,7 @@ public class sell_shop extends Fragment {
     Spinner submitter;
     EditText cons_t;
     EditText addr;
-    Spinner bedrooms;
+    Spinner rooms;
     Spinner furniture;
     Spinner sqft;
     Spinner facing;
@@ -53,13 +53,13 @@ public class sell_shop extends Fragment {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 
-        bedrooms = (Spinner) firstTabView.findViewById(R.id.bedrooms);
+        rooms = (Spinner) firstTabView.findViewById(R.id.rooms);
         List<String> list1 = new ArrayList<String>();
         list1.add("Single");
-        list1.add("2 Bedroom");
-        list1.add("3 Bedroom");
+        list1.add("2 rooms");
+        list1.add("3 rooms");
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, list1);
-        bedrooms.setAdapter(adapter1);
+        rooms.setAdapter(adapter1);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         furniture = (Spinner) firstTabView.findViewById(R.id.furniture);
@@ -77,6 +77,8 @@ public class sell_shop extends Fragment {
         list3.add("100 - 500 sqft");
         list3.add("500 - 1000 sqft");
         list3.add("1000 - 2000 sqft");
+        list3.add("2000 - 5000 sqft");
+        list3.add("5000 - more sqft");
         ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, list3);
         sqft.setAdapter(adapter3);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

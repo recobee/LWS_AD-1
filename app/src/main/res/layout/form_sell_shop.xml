@@ -81,40 +81,18 @@
                 android:id="@+id/address_block"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="4">
+                android:orientation="horizontal">
                 <EditText
-                    android:layout_width="0dip"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
+
                     android:id="@+id/address"
                     android:hint="Address of submitter"
                     android:inputType="textMultiLine"
                     android:lines="4"
                     android:gravity="top"
                     android:textSize="14sp"/>
-                <LinearLayout
-                    android:id="@+id/area_pin_code_block"
-                    android:layout_width="0dip"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:weightSum="2"
-                    android:orientation="vertical">
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:hint="Area"
-                        android:textSize="@dimen/loc_address_text"/>
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:hint="Pincode"
-                        android:textSize="@dimen/loc_address_text"
-                        android:inputType="number"
-                        android:maxLength="6" />
-                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
