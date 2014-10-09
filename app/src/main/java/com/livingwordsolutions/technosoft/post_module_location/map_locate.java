@@ -22,7 +22,7 @@ import android.widget.Toast;
 public class map_locate extends Fragment {
 
     Context context;
-    Button getLocationButton;
+    public Button getLocationButton;
     TextView lat, lon;
     EditText address;
 
@@ -50,7 +50,7 @@ public class map_locate extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(context, MapActivity.class);
+                Intent intent = new Intent(getActivity(), MapActivity.class);
                 startActivityForResult(intent, 1);
             }
         });

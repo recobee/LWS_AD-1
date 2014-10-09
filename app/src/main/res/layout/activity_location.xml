@@ -1,5 +1,4 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent">
 
@@ -7,6 +6,6 @@
         android:id="@+id/act_sell_h_map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.livingwordsolutions.technosoft.post_module_location.map_locate"></fragment>
+        android:name="com.livingwordsolutions.technosoft.post_module_location.map_locate"></fragment>
 
 </RelativeLayout>
