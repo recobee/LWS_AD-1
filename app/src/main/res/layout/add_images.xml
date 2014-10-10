@@ -10,11 +10,11 @@
 
     >
 
-    <fragment
+    <!--<fragment
         android:id="@+id/kishore"
         android:name="com.livingwordsolutions.technosoft.post_module_location.Its_fun"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </fragment>
+    </fragment>-->
 </RelativeLayout>
