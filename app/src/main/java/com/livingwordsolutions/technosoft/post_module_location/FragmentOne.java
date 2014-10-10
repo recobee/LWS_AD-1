@@ -1,7 +1,8 @@
 package com.livingwordsolutions.technosoft.post_module_location;
 
-import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,9 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
 import android.widget.TextView;
+
+import Forms.DGNewFragment;
+import Forms.DGTabFragment;
 
 
 public class FragmentOne extends Fragment {
@@ -39,7 +43,7 @@ public class FragmentOne extends Fragment {
         sell_five = (RadioButton) result.findViewById(R.id.sell_5);
         sell_six = (RadioButton) result.findViewById(R.id.sell_6);
         radioGroup = (RadioGroup) result.findViewById(R.id.rb_group);
-        DefaultTabLayout();
+        //DefaultTabLayout();
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -278,30 +282,36 @@ public class FragmentOne extends Fragment {
 
     private void radioButtonSelectionActivity(int checkedId) {
 
-
+        FragmentTransaction transaction;
         switch (checkedId) {
             case R.id.sell_1:
-                House_Sell_Tabs();
+                transaction  = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.dgTabs, new DGTabFragment());
+                transaction.commit();
+
 
                 break;
             case R.id.sell_2:
-                Appartment_Sell_Tabs();
+                transaction  = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.dgTabs, new DGNewFragment());
+                transaction.commit();
+
 
                 break;
             case R.id.sell_3:
-                Shop_Sell_Tabs();
+               // Shop_Sell_Tabs();
 
                 break;
             case R.id.sell_4:
-                Underconstruction_Sell_Tabs();
+              //  Underconstruction_Sell_Tabs();
 
                 break;
             case R.id.sell_5:
-                Land_Sell_Tabs();
+              //  Land_Sell_Tabs();
 
                 break;
             case R.id.sell_6:
-                Commercial_Sell_Tabs();
+               // Commercial_Sell_Tabs();
 
                 break;
             default:
@@ -316,6 +326,7 @@ public class FragmentOne extends Fragment {
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
 
         result = inflater.inflate(R.layout.fragment_one, container, false);
+
         this.inflater = inflater;
         this.container = container;
         initRadioButtons();

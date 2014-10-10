@@ -1,19 +1,22 @@
 package com.livingwordsolutions.technosoft.post_module_location;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 
 
-public class MyActivity extends FragmentActivity {
+public class MyActivity extends android.support.v4.app.FragmentActivity {
 
 
-
+    RadioGroup l_lout;
+    LinearLayout set_container;
 
 
     @Override
@@ -21,7 +24,18 @@ public class MyActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
+        l_lout = (RadioGroup) findViewById(R.id.rg_main);
+        //l_lout.setTranslationY(200);
 
+        Button a_but = (Button) findViewById(R.id.button3);
+
+        set_container = (LinearLayout) l_lout.getParent();
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment_place, new FragmentOne())
+                    .commit();
+        }
 
 
     }
@@ -42,7 +56,7 @@ public class MyActivity extends FragmentActivity {
 
         }
 
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
 
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
 

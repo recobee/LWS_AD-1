@@ -3,7 +3,7 @@ package com.livingwordsolutions.technosoft.post_module_location;
 
 
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
