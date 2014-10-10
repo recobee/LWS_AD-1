@@ -7,7 +7,7 @@
 
 
     <ScrollView
-        android:id="@+id/scr"
+        android:id="@+id/scr_app"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:scrollbars="none">
@@ -18,7 +18,7 @@
             android:clickable="true">
 
             <LinearLayout
-                android:id="@+id/sub_frame"
+                android:id="@+id/sub_frame_app"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ab_transparent_myvizag"
@@ -32,7 +32,7 @@
                     android:src="@drawable/submitter_ic" />
 
                 <Spinner
-                    android:id="@+id/submitter"
+                    android:id="@+id/submitter_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -41,10 +41,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/sec_level"
+                android:id="@+id/sec_level_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/sub_frame"
+                android:layout_below="@id/sub_frame_app"
                 android:paddingTop="10dip"
                 android:weightSum="30">
 
@@ -56,7 +56,7 @@
 
                 <EditText
 
-                    android:id="@+id/phone_val"
+                    android:id="@+id/phone_val_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="12"
@@ -73,7 +73,7 @@
 
                 <EditText
 
-                    android:id="@+id/cons_by"
+                    android:id="@+id/cons_by_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="12"
@@ -84,15 +84,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/address_block"
+                android:id="@+id/address_block_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/sec_level"
+                android:layout_below="@+id/sec_level_app"
                 android:orientation="horizontal"
                 android:weightSum="4">
 
                 <EditText
-                    android:id="@+id/address"
+                    android:id="@+id/address_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -103,7 +103,7 @@
                     android:textSize="14sp" />
 
                 <LinearLayout
-                    android:id="@+id/area_pin_code_block"
+                    android:id="@+id/area_pin_code_block_app"
                     android:layout_width="0dip"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -129,14 +129,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/req_block"
+                android:id="@+id/req_block_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/address_block"
+                android:layout_below="@id/address_block_app"
                 android:weightSum="2">
 
                 <Spinner
-                    android:id="@+id/bedrooms"
+                    android:id="@+id/bedrooms_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -146,7 +146,7 @@
                     android:padding="0dip" />
 
                 <Spinner
-                    android:id="@+id/furniture"
+                    android:id="@+id/furniture_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -154,14 +154,14 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/req_block1"
+                android:id="@+id/req_block1_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/req_block"
+                android:layout_below="@id/req_block_app"
                 android:weightSum="2">
 
                 <Spinner
-                    android:id="@+id/sqft"
+                    android:id="@+id/sqft_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -169,7 +169,7 @@
                     android:layout_weight="1" />
 
                 <Spinner
-                    android:id="@+id/facing"
+                    android:id="@+id/facing_app"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -177,10 +177,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/pr"
+                android:id="@+id/pr_app"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/req_block1"
+                android:layout_below="@id/req_block1_app"
                 android:weightSum="2">
 
                 <TextView
@@ -192,7 +192,7 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/price"
+                    android:id="@+id/price_app"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -205,13 +205,13 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn"
+                android:id="@+id/btn_app"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_below="@id/pr"
+                android:layout_below="@id/pr_app"
                 android:background="@color/maincolor"
                 android:text="Submit"
                 android:textColor="@android:color/white" />

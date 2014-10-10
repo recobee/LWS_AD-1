@@ -4,14 +4,11 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 
@@ -21,11 +18,6 @@ public class MyActivity extends Activity {
 
     RadioGroup l_lout;
     LinearLayout set_container;
-    boolean isBottom = true;
-    ImageButton b1, b2, b3, b4, b5, b6;
-    Intent camera, gallery;
-    int[] idDetails = new int[6];
-    Bitmap image;
 
 
     @Override
