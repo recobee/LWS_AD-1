@@ -196,7 +196,7 @@ public class Dashboard extends FragmentActivity {
 
         if (view == findViewById(R.id.dash1)) {
 
-            Intent intent = new Intent(Dashboard.this, FragmentOne.class);
+            Intent intent = new Intent(Dashboard.this, MyActivity.class);
 
 
             startActivity(intent);

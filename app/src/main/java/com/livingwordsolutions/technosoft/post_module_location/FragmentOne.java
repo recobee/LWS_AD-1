@@ -1,8 +1,7 @@
 package com.livingwordsolutions.technosoft.post_module_location;
 
-import android.content.Intent;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import android.widget.TabWidget;
 import android.widget.TextView;
 
 
-public class FragmentOne extends FragmentActivity {
+public class FragmentOne extends Fragment {
 
     TabHost host;
     TabSpec firstTab, secondTab, thirdTab, fourthTab;
@@ -30,37 +29,6 @@ public class FragmentOne extends FragmentActivity {
     private RadioButton sell_five;
     private RadioButton sell_six;
     private RadioGroup radioGroup;
-
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_one);
-
-    }
-
-
-    public void selectSet(View view) {
-
-        if (view == findViewById(R.id.dash1)) {
-
-            Intent intent = new Intent(FragmentOne.this, FragmentOne.class);
-
-
-            startActivity(intent);
-
-        } else {
-
-            Intent intent = new Intent(FragmentOne.this, FragmentTwo.class);
-
-            startActivity(intent);
-
-        }
-
-
-    }
-
 
 
     private void initRadioButtons() {
@@ -344,7 +312,7 @@ public class FragmentOne extends FragmentActivity {
     }
 
 
-    /*@Override
+    @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
 
         result = inflater.inflate(R.layout.fragment_one, container, false);
@@ -352,7 +320,7 @@ public class FragmentOne extends FragmentActivity {
         this.container = container;
         initRadioButtons();
         return result;
-    }*/
+    }
 
 
     // TAB NAMES DEFINES HERE  - START //
