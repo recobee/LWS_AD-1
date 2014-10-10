@@ -37,14 +37,14 @@ public class sell_appartment extends Fragment {
                              Bundle savedInstanceState) {
         View firstTabView = inflater.inflate(R.layout.form_sell_appartment, container, false);
 
-        phone = (EditText) firstTabView.findViewById(R.id.phone_val);
-        cons_t = (EditText) firstTabView.findViewById(R.id.cons_by);
-        addr = (EditText) firstTabView.findViewById(R.id.address);
-        price = (EditText) firstTabView.findViewById(R.id.price);
-        btn = (Button) firstTabView.findViewById(R.id.btn);
+        phone = (EditText) firstTabView.findViewById(R.id.phone_val_app);
+        cons_t = (EditText) firstTabView.findViewById(R.id.cons_by_app);
+        addr = (EditText) firstTabView.findViewById(R.id.address_app);
+        price = (EditText) firstTabView.findViewById(R.id.price_app);
+        btn = (Button) firstTabView.findViewById(R.id.btn_app);
 
 
-        submitter = (Spinner) firstTabView.findViewById(R.id.submitter);
+        submitter = (Spinner) firstTabView.findViewById(R.id.submitter_app);
         List<String> arrays = new ArrayList<String>();
         arrays.add("Individual");
         arrays.add("Builder");
@@ -54,7 +54,7 @@ public class sell_appartment extends Fragment {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 
-        bedrooms = (Spinner) firstTabView.findViewById(R.id.bedrooms);
+        bedrooms = (Spinner) firstTabView.findViewById(R.id.bedrooms_app);
         List<String> list1 = new ArrayList<String>();
         list1.add("Single");
         list1.add("2 Bedroom");
@@ -63,7 +63,7 @@ public class sell_appartment extends Fragment {
         bedrooms.setAdapter(adapter1);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        furniture = (Spinner) firstTabView.findViewById(R.id.furniture);
+        furniture = (Spinner) firstTabView.findViewById(R.id.furniture_app);
         List<String> list2 = new ArrayList<String>();
         list2.add("Not Furnished");
         list2.add("Fully Furnished");
@@ -72,7 +72,7 @@ public class sell_appartment extends Fragment {
         furniture.setAdapter(adapter2);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        sqft = (Spinner) firstTabView.findViewById(R.id.sqft);
+        sqft = (Spinner) firstTabView.findViewById(R.id.sqft_app);
         List<String> list3 = new ArrayList<String>();
         list3.add("below 100 sqft");
         list3.add("100 - 500 sqft");
@@ -82,7 +82,7 @@ public class sell_appartment extends Fragment {
         sqft.setAdapter(adapter3);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        facing = (Spinner) firstTabView.findViewById(R.id.facing);
+        facing = (Spinner) firstTabView.findViewById(R.id.facing_app);
         List<String> list4 = new ArrayList<String>();
         list4.add("East Facing");
         list4.add("West Facing");
