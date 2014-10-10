@@ -22,11 +22,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.livingwordsolutions.technosoft.post_module_location" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcaacd71-e788-4414-b5f7-0539a8733ddb" name="Default" comment="test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Dashboard.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Dashboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/FragmentOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/FragmentOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Post_Success.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Post_Success.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_one.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_one.xml" />
+    <list default="true" id="bcaacd71-e788-4414-b5f7-0539a8733ddb" name="Default" comment="&lt;Reverted back &gt;&#10;cause failure of data....&#10;test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LWS_AD-1.iws" />
@@ -1357,7 +1353,11 @@
       <created>1412934707451</created>
       <updated>1412934707451</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&lt;Reverted back &gt;&#10;cause failure of data....&#10;test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT">
+      <created>1412938428980</created>
+      <updated>1412938428980</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1419,7 +1419,8 @@
     <MESSAGE value="Changed id's for form_sell_appartment.xml&#10;&#10;java also" />
     <MESSAGE value="Changed id's for form_sell_house.xml&#10;&#10;java also" />
     <MESSAGE value="test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT" />
+    <MESSAGE value="&lt;Reverted back &gt;&#10;cause failure of data....&#10;test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;Reverted back &gt;&#10;cause failure of data....&#10;test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
