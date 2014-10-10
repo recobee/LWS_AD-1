@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcaacd71-e788-4414-b5f7-0539a8733ddb" name="Default" comment="&lt;Reverted back &gt;&#10;cause failure of data....&#10;test_sell_form,&#10;test_sell_form2&#10;&#10;added for form options in HOME and APARTMENT">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java" />
     </list>
     <ignored path="LWS_AD-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,23 +49,47 @@
       <file leaf-file-name="FragmentOne.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/FragmentOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="5790">
+            <state vertical-scroll-proportion="0.0" vertical-offset="490" max-vertical-offset="5790">
               <caret line="153" column="11" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="11" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1464#1685#0" expanded="true" />
+                <element signature="e#1674#1675#0" expanded="true" />
+                <element signature="e#1793#2111#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="e#2145#2398#0" expanded="true" />
+                <element signature="e#2387#2388#0" expanded="true" />
+                <element signature="e#2431#2644#0" expanded="true" />
+                <element signature="e#2632#2633#0" expanded="true" />
+                <element signature="e#2889#3213#0" expanded="true" />
                 <element signature="e#3202#3203#0" expanded="true" />
+                <element signature="e#3247#3466#0" expanded="true" />
                 <element signature="e#3455#3456#0" expanded="true" />
+                <element signature="e#3499#3712#0" expanded="true" />
                 <element signature="e#3700#3701#0" expanded="true" />
+                <element signature="e#3951#4269#0" expanded="true" />
                 <element signature="e#4258#4259#0" expanded="true" />
+                <element signature="e#4303#4558#0" expanded="true" />
                 <element signature="e#4547#4548#0" expanded="true" />
+                <element signature="e#4591#4804#0" expanded="true" />
                 <element signature="e#4792#4793#0" expanded="true" />
+                <element signature="e#5055#5386#0" expanded="true" />
                 <element signature="e#5375#5376#0" expanded="true" />
+                <element signature="e#5420#5639#0" expanded="true" />
                 <element signature="e#5628#5629#0" expanded="true" />
+                <element signature="e#5672#5885#0" expanded="true" />
                 <element signature="e#5873#5874#0" expanded="true" />
+                <element signature="e#6123#6441#0" expanded="true" />
                 <element signature="e#6430#6431#0" expanded="true" />
+                <element signature="e#6475#6694#0" expanded="true" />
                 <element signature="e#6683#6684#0" expanded="true" />
+                <element signature="e#6727#6940#0" expanded="true" />
                 <element signature="e#6928#6929#0" expanded="true" />
+                <element signature="e#7184#7508#0" expanded="true" />
                 <element signature="e#7497#7498#0" expanded="true" />
+                <element signature="e#7542#7761#0" expanded="true" />
                 <element signature="e#7750#7751#0" expanded="true" />
+                <element signature="e#7794#8007#0" expanded="true" />
                 <element signature="e#7995#7996#0" expanded="true" />
                 <element signature="e#9452#9618#0" expanded="true" />
                 <element signature="e#9607#9608#0" expanded="true" />
@@ -103,21 +127,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1335">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22099447" vertical-offset="135" max-vertical-offset="1155">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post_Success.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Post_Success.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Post_Success.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13812155" vertical-offset="0" max-vertical-offset="720">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="720">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -888,9 +912,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sell__appartment__details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_images.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/FragmentOne.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_one.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java" />
       </list>
     </option>
   </component>
@@ -1855,38 +1879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/FragmentOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="5790">
-          <caret line="153" column="11" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="11" />
-          <folding>
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3700#3701#0" expanded="true" />
-            <element signature="e#4258#4259#0" expanded="true" />
-            <element signature="e#4547#4548#0" expanded="true" />
-            <element signature="e#4792#4793#0" expanded="true" />
-            <element signature="e#5375#5376#0" expanded="true" />
-            <element signature="e#5628#5629#0" expanded="true" />
-            <element signature="e#5873#5874#0" expanded="true" />
-            <element signature="e#6430#6431#0" expanded="true" />
-            <element signature="e#6683#6684#0" expanded="true" />
-            <element signature="e#6928#6929#0" expanded="true" />
-            <element signature="e#7497#7498#0" expanded="true" />
-            <element signature="e#7750#7751#0" expanded="true" />
-            <element signature="e#7995#7996#0" expanded="true" />
-            <element signature="e#9452#9618#0" expanded="true" />
-            <element signature="e#9607#9608#0" expanded="true" />
-            <element signature="e#9739#9906#0" expanded="true" />
-            <element signature="e#9895#9896#0" expanded="true" />
-            <element signature="e#10022#10188#0" expanded="true" />
-            <element signature="e#10177#10178#0" expanded="true" />
-            <element signature="e#10318#10485#0" expanded="true" />
-            <element signature="e#10474#10475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_one.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1908,18 +1900,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Post_Success.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1335">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="720">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/Post_Success.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/FragmentOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13812155" vertical-offset="0" max-vertical-offset="720">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="5790">
+          <caret line="153" column="11" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1464#1685#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
+            <element signature="e#1793#2111#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2145#2398#0" expanded="true" />
+            <element signature="e#2387#2388#0" expanded="true" />
+            <element signature="e#2431#2644#0" expanded="true" />
+            <element signature="e#2632#2633#0" expanded="true" />
+            <element signature="e#2889#3213#0" expanded="true" />
+            <element signature="e#3202#3203#0" expanded="true" />
+            <element signature="e#3247#3466#0" expanded="true" />
+            <element signature="e#3455#3456#0" expanded="true" />
+            <element signature="e#3499#3712#0" expanded="true" />
+            <element signature="e#3700#3701#0" expanded="true" />
+            <element signature="e#3951#4269#0" expanded="true" />
+            <element signature="e#4258#4259#0" expanded="true" />
+            <element signature="e#4303#4558#0" expanded="true" />
+            <element signature="e#4547#4548#0" expanded="true" />
+            <element signature="e#4591#4804#0" expanded="true" />
+            <element signature="e#4792#4793#0" expanded="true" />
+            <element signature="e#5055#5386#0" expanded="true" />
+            <element signature="e#5375#5376#0" expanded="true" />
+            <element signature="e#5420#5639#0" expanded="true" />
+            <element signature="e#5628#5629#0" expanded="true" />
+            <element signature="e#5672#5885#0" expanded="true" />
+            <element signature="e#5873#5874#0" expanded="true" />
+            <element signature="e#6123#6441#0" expanded="true" />
+            <element signature="e#6430#6431#0" expanded="true" />
+            <element signature="e#6475#6694#0" expanded="true" />
+            <element signature="e#6683#6684#0" expanded="true" />
+            <element signature="e#6727#6940#0" expanded="true" />
+            <element signature="e#6928#6929#0" expanded="true" />
+            <element signature="e#7184#7508#0" expanded="true" />
+            <element signature="e#7497#7498#0" expanded="true" />
+            <element signature="e#7542#7761#0" expanded="true" />
+            <element signature="e#7750#7751#0" expanded="true" />
+            <element signature="e#7794#8007#0" expanded="true" />
+            <element signature="e#7995#7996#0" expanded="true" />
+            <element signature="e#9452#9618#0" expanded="true" />
+            <element signature="e#9607#9608#0" expanded="true" />
+            <element signature="e#9739#9906#0" expanded="true" />
+            <element signature="e#9895#9896#0" expanded="true" />
+            <element signature="e#10022#10188#0" expanded="true" />
+            <element signature="e#10177#10178#0" expanded="true" />
+            <element signature="e#10318#10485#0" expanded="true" />
+            <element signature="e#10474#10475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/livingwordsolutions/technosoft/post_module_location/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22099447" vertical-offset="135" max-vertical-offset="1155">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,23 +1,19 @@
 package com.livingwordsolutions.technosoft.post_module_location;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RadioGroup;
 
 
-public class MyActivity extends Activity {
+public class MyActivity extends FragmentActivity {
 
 
-    RadioGroup l_lout;
-    LinearLayout set_container;
+
 
 
     @Override
@@ -25,18 +21,7 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        l_lout = (RadioGroup) findViewById(R.id.rg_main);
-        //l_lout.setTranslationY(200);
 
-        Button a_but = (Button) findViewById(R.id.button3);
-
-        set_container = (LinearLayout) l_lout.getParent();
-
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.fragment_place, new FragmentOne())
-                    .commit();
-        }
 
 
     }
