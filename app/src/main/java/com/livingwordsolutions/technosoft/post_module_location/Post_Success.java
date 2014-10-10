@@ -13,7 +13,7 @@ public class Post_Success extends Activity {
     public void onBackPressed() {
         // TODO Auto-generated method stub
         super.onBackPressed();
-        Intent intent = new Intent(Post_Success.this, MyActivity.class);
+        Intent intent = new Intent(Post_Success.this, FragmentOne.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
