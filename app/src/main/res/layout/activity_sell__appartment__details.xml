@@ -4,7 +4,7 @@
 
     <fragment
         android:id="@id/act_sell_a"
-        class="com.livingwordsolutions.technosoft.post_module_location.test_sell2_form"
+        class="com.livingwordsolutions.technosoft.post_module_location.sell_home_details_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></fragment>
 

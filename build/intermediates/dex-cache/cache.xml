@@ -55,5 +55,11 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/kishorechandra/LWS_AD-1/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-42c3e257f51fc8f6b5d1f13e95896f787a3f9781.jar"
+        jar="/Users/kishorechandra/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
 
 </pre-dex-items>

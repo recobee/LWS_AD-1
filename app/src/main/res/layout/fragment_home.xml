@@ -71,7 +71,7 @@
                     android:background="@null"
                     android:onClick="selectSet"
                     android:padding="@dimen/pad_main_sel"
-                    android:scaleType="fitXY"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/search"
 
                     />
